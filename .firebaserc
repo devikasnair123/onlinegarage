@@ -1,0 +1,21 @@
+{
+  "targets": {
+    "online-garage-9ec50": {
+      "hosting": {
+        "auto": [
+          "online-garage-9ec50"
+        ]
+      }
+    },
+    "og-garage": {
+      "hosting": {
+        "auto": [
+          "og-garage"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "og-garage"
+  }
+}
