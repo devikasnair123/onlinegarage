@@ -1,0 +1,65 @@
+<div class="jj">
+  <div class="main"><div><br></div>
+    <div>
+      <ul class="slides">
+        <input type="radio" name="radio-btn" id="img-1" checked />
+        <li class="slide-container">
+        <div class="slide">
+          <img src="{{ d[0].img1 }}" alt="..."  />
+            </div>
+        <div class="nav">
+          <label for="img-6" class="prev">&#x2039;</label>
+          <label for="img-2" class="next">&#x203a;</label>
+        </div>
+        </li>
+    
+        <input type="radio" name="radio-btn" id="img-2" />
+        <li class="slide-container">
+            <div class="slide">
+              <img src="{{d[0].img2}}" />
+            </div>
+        <div class="nav">
+          <label for="img-1" class="prev">&#x2039;</label>
+          <label for="img-3" class="next">&#x203a;</label>
+        </div>
+        </li>
+    
+        <input type="radio" name="radio-btn" id="img-3" />
+        <li class="slide-container">
+            <div class="slide">
+              <img src="{{d[0].img3}}" />
+            </div>
+        <div class="nav">
+          <label for="img-2" class="prev">&#x2039;</label>
+          <label for="img-4" class="next">&#x203a;</label>
+        </div>
+        </li>
+    
+        
+    
+        
+    
+        
+    
+        <li class="nav-dots">
+          <label for="img-1" class="nav-dot" id="img-dot-1"></label>
+          <label for="img-2" class="nav-dot" id="img-dot-2"></label>
+          <label for="img-3" class="nav-dot" id="img-dot-3"></label>
+          
+        </li>
+    </ul>
+  </div>
+
+  <div class="container">
+    <div class="card">
+      <h1 class="title">{{d[0].Shop}}</h1>
+      <p class="subtitle">Timings :{{d[0].Timings}}</p>
+      <p class="subtitle">Type :{{d[0].type}}</p>
+      <p class="subtitle">Location:<a href="{{d[0].direction}}">{{d[0].direction}}</a></p>
+      <a class="btn btn-primary" role="button" aria-disabled="true" routerLink="/appointment">Make an Appointment</a>
+    </div>
+    <div class="blob"></div>
+  </div>
+
+  </div>
+</div>

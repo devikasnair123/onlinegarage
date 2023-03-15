@@ -1,0 +1,132 @@
+@import url("https:///fonts.googleapis.com/css?family=Baloo 2& family=Potta+One&display=swap");
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Baloo 2", cursive;
+}
+.title{
+  text-align: center;
+  margin: 12rem 0;
+  letter-spacing: 2px;
+  font-family: "Potta One",cursive;
+  text-shadow: 0 5px 6px deepskyblue;
+}
+
+footer{
+  background: url("../../../assets/images/5.jpg");
+  color: white;
+}
+
+.row{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.column{
+  width: 300px;
+  height: 345px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 70px 18px;
+}
+
+.logo{
+  margin: 12px 0;
+  letter-spacing: 3px;
+  font-family: "Potta One",cursive;
+  font-size: 25px;
+  text-shadow: 0 0 4px deepskyblue;
+  color: black;
+}
+
+.column h5{
+  font-size: 18px;
+  letter-spacing: 2px;
+  position: relative;
+  padding-bottom: 8px;
+}
+
+.column h5::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 60%;
+  background-color: deepskyblue;
+}
+.footer-links li{
+  margin: 12px 0;
+  list-style: none;
+}
+
+.footer-links li a{
+  text-decoration: none;
+  color: white;
+  transition: 0.1s;
+}
+
+.footer-links li a:hover{
+  color: deepskyblue;
+  text-shadow: 0 0 12px;
+}
+
+.contact-details li{
+  list-style: none;
+  margin: 12px 0;
+  display: flex;
+  align-items: center;
+
+}
+
+.contact-details li i{
+  height: 35px;
+  width: 35px;
+  border: 2px solid deepskyblue;
+  color: deepskyblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+  margin-right: 12px;
+}
+
+.contact-details li i:hover {
+  color: white;
+  background-color: deepskyblue;
+
+}
+
+.social-link-icons{
+  display: flex;
+  list-style: none;
+}
+
+.social-link-icons li{
+  margin-right: 12px;
+}
+
+.social-link-icons li a{
+  height: 35px;
+  width: 35px;
+  border: 2px solid deepskyblue;
+  background-color: deepskyblue;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.social-link-icons li a:hover{
+  background: transparent;
+  color: deepskyblue;
+}

@@ -1,0 +1,52 @@
+<div class="hh"><br><br>
+  <h1 class="fs-1" style="text-align: center; font-family: sans-serif;">Explore the Garages</h1><br><br>
+  <div class="container mt-3">
+    <div class="row">
+      <div class="col" *ngFor="let d of database">
+       <!-- flip-card-container -->
+<div class="flip-card-container" style="--hue: 220">
+  <div class="flip-card">
+
+    <div class="card-front">
+      <figure>
+        <div class="img-bg"></div>
+        <img src="{{d.img1}}" alt="Brohm Lake">
+        <figcaption>{{d.Shop}}</figcaption>
+      </figure>
+
+      <ul>
+        <li>District :{{d.District}}</li>
+        <li>Timings :{{d.Timings}}</li>
+        
+      </ul>
+    </div>
+
+    <div class="card-back">
+      <figure>
+        <div class="img-bg"></div>
+        <img src="{{d.img3}}" alt="Brohm Lake">
+      </figure>
+
+      <button (click)="goto(d.id)">More Details</button>
+
+      <div class="design-container">
+        <span class="design design--1"></span>
+        <span class="design design--2"></span>
+        <span class="design design--3"></span>
+        <span class="design design--4"></span>
+        <span class="design design--5"></span>
+        <span class="design design--6"></span>
+        <span class="design design--7"></span>
+        <span class="design design--8"></span>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- /flip-card-container -->
+
+        </div>
+      </div>
+    </div>
+  </div>
+

@@ -1,0 +1,16 @@
+.g{
+    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.i{
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/780/837/206/kowloon-hong-kong-china-vaporwave-wallpaper-preview.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 800px;
+}
