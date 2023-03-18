@@ -5,22 +5,22 @@
       <h2 style="color: antiquewhite;">BOOK YOUR APPOINTMENT</h2><br>
       <br>
       <div class="form-floating mb-3">
-      <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+      <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com" name="name" [(ngModel)]="name">
       <label for="floatingInput">Enter Your Name</label>
     </div>
     <div class="form-floating mb-3">
-      <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+      <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com" name="complaint" [(ngModel)]="complaint">
       <label for="floatingInput">Explain complaint</label>
     </div>
     <div class="form-floating mb-3">
-      <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+      <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com" name="location" [(ngModel)]="location">
       <label for="floatingInput">Location</label>
     </div>
     <div class="form-floating mb-3">
-      <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+      <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com" name="phone" [(ngModel)]="phone">
       <label for="floatingInput">Phone Number</label>
     </div>
-    <div> <button type="submit" class="btn btn-primary">Submit</button></div><br><br>
+    <div> <button type="submit" class="btn btn-primary" (click)="submit()">Submit</button></div><br><br>
   </div>
   
   </div>

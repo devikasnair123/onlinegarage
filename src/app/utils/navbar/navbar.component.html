@@ -3,9 +3,11 @@
       <ul>
           <li><a routerLink="">Home</a></li>
           <li><a routerLink="search">Search</a></li>
-          <li><a routerLink="garages">Garages</a></li>
+          <li><a routerLink="signup">Garages</a></li>
           <li><a routerLink="contact">Contact us</a></li>
-          <li><a routerLink="signup">Sign up</a></li>
+          <li><a routerLink="signup" *ngIf="!auth.isLogged()">Sign up</a></li>
+          <li><a routerLink="signup" *ngIf="auth.isLogged()" (click)="logout()">Log Out</a></li>
+
         
       </ul>
   </nav>
